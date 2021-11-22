@@ -1,2 +1,2 @@
-# Furniture_Shop_PROJECT
-Сайт магазина мебели
+# Furniture_Shop-JS-Project
+Сайт магазина дизайнерской мебели

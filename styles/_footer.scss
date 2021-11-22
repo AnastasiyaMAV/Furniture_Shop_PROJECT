@@ -1,0 +1,124 @@
+.footer {
+    // width: 100%;
+    min-height: 336px;
+    background-color: $color-white;
+    // background-color: lime;
+    padding: 50px 101px;
+
+
+    display: grid;
+    grid-gap: 70px;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    
+
+    &__funiro {
+        max-width: 249px;
+    }
+
+    &__menu {
+        max-width: 104px;
+    }
+
+    &__account {
+        max-width: 93px;
+    }
+
+    &__connect {
+        max-width: 180px;
+    }
+
+    &__subscribe {
+        max-width: 292px;
+    }
+
+    &__column {
+
+        display: grid;
+        align-content: start;
+        // grid-row-gap: 16px;
+
+        @media (min-width: 1500px) {
+            grid-row-gap: 16px;
+        }
+
+        @media (min-width:1230px) and (max-width: 1499px) {
+            grid-row-gap: 10px;
+        }
+
+        @media (min-width:800px) and (max-width: 1229px) {
+            grid-row-gap: 5px;
+        }
+
+        // max-width: 200px;
+
+        & a:hover {
+            color: $color-primary;
+        }
+    
+        &_title {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: bold;
+            font-size: 24px;
+            line-height: 29px;
+            color: $color-black;
+
+
+            @media (max-width: 1500px) {
+                margin: 5px;
+            }
+        }
+
+        &_item {
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+            color: $color-text2;
+        }
+
+
+        &_description{
+            max-width: 249px;
+            margin-top: 0;
+        }
+
+        &_subscribe__input {
+            width: 70%;
+            height: 45px;
+            background-color: $color-product-background;
+            border: none;
+            padding: 3px 0 3px 10px;
+            font-family: Gilroy;
+            font-style: normal;
+            font-weight: normal;
+            font-size: 16px;
+            line-height: 150%;
+        }
+
+        &_subscribe__input:focus {
+            border-color: $color-primary;
+            outline: none;
+            font-family: Gilroy;
+            font-style: normal;
+            color: $color-text2;
+        }
+
+        &_subscribe__button {
+            background-color: $color-primary;
+            border: none;
+            width: 45px;
+            height: 45px;
+        }
+
+        &_subscribe__button:hover {
+            cursor: pointer;
+            background-color: $color-red-accents;
+        }
+    }
+
+    p {
+        margin: 0;
+    }
+}

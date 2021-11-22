@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="/node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <title>Furniture Shop</title>
+</head>
+
+<body>
+    <header class="header" id="main">
+        <nav class="header__menu">
+            <div class="header__logo"><a href="#main">Funiro.</a></div>
+            <div class="header__menu-item"><a href="#products">Products&nbsp;<img
+                        src="assets/images/header/arrowDown.png" alt="img" /></a></div>
+            <div class="header__menu-item"><a href="#total_container_funiro">Rooms&nbsp;<img
+                        src="assets/images/header/arrowDown.png" alt="img" /></a>
+            </div>
+            <div class="header__menu-item"><a href="#inspirations">Inspirations&nbsp;<img
+                        src="assets/images/header/arrowDown.png" alt="img" /></a></div>
+            <input type="search" placeholder="Search for minimalist chair" size="30" />
+            <div class="favorites">
+                <img src="assets/images/header/favorites.png" alt="heart" class="favoritesButton"/>
+            </div>
+            <div class="cart">
+                <img src="assets/images/header/cart.png" alt="basket" class="busket" />
+            </div>
+            <div class="user">
+                <div class="dropdown">
+                    <button class="btn btn-outline dropdown-toggle" type="button" id="dropdownMenuButton"
+                        data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <img src="assets/images/header/user.png" alt="user" id="user" />
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-right" aria-labelledby="dropdownMenuButton">
+                        <div class="dropdown-item userProfile">Профиль:</div>
+                        <div class="dropdown-item"><img src="assets/images/header/user.png" alt="user" /></div>
+                        <div class="dropdown-item userName">Таня Иванова</div>
+                        <div class="dropdown-item userMail">name@mail.com</div>
+                        <div class="dropdown-item userNotifications">Уведомления<span class="badge badge-light">4</span>
+                        </div>
+                        <div class="dropdown-item userSettings">Настройки</div>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="leftSideBtn">
+            <div class="groupButtons">
+                <div class="radiobuttons">
+                    <a class="switch" href="#" role="button"></a>
+                    <a class="switch switch-active" href="#" role="button"></a>
+                    <a class="switch" href="#" role="button"></a>
+                    <a class="switch" href="#" role="button"></a>
+                </div>
+                <div class="carouselButtons">
+                    <div class="buttonPrev"><img src="assets/images/header/btnPrev.png" alt="img" /></div>
+                    <div class="buttonNext"><img src="assets/images/header/btnNext.png" alt="img" /></div>
+                </div>
+            </div>
+        </div>
+        <div class="header-small">
+            <nav class="header-small__menu">
+                <div class="header-small__row-top">
+                    <div class="header-small__logo">Funiro.</div>
+                    <div class="header__menu-item"><a href="#products">Products <img
+                                src="assets/images/header/arrowDown.png" alt="img" /></a></div>
+                    <div class="header__menu-item"><a href="#funiro">Rooms <img src="assets/images/header/arrowDown.png"
+                                alt="img" /></a>
+                    </div>
+                    <div class="header__menu-item"><a href="#inspirations">Inspirations <img
+                                src="assets/images/header/arrowDown.png" alt="img" /></a></div>
+                </div>
+                <div class="header-small__row-bottom">
+                    <div>
+                        <input type="search" placeholder="Search for minimalist chair" size="20" />
+                    </div>
+                    <div class="favorites">
+                        <img src="assets/images/header/favorites.png" alt="heart" class="favoritesButton"/>
+                    </div>
+                    <div class="cart">
+                        <img src="assets/images/header/cart.png" alt="basket" class="busket" />
+                    </div>
+                    <div class="user">
+                        <img src="assets/images/header/user.png" alt="user" class="user" />
+                    </div>
+                </div>
+            </nav>
+        </div>
+
+        <div class="pos-f-t">
+            <div class="collapse" id="navbarToggleExternalContent">
+                <div class="bg-light p-4">
+                    <div class="text-white">
+                        <input type="search" placeholder="Search for..." size="30" />
+                    </div>
+                    <div class="text-muted">
+                        <div class="favorites">
+                            <img src="assets/images/header/favorites.png" alt="heart" class="favoritesButton"/>
+                        </div>
+                        <div class="cart">
+                            <img src="assets/images/header/cart.png" alt="basket" class="busket" />
+                        </div>
+                        <div class="user">
+                            <img src="assets/images/header/user.png" alt="user" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <nav class="navbar navbar-light bg-light">
+                <div class="hamburger__logo">Funiro.</div>
+                <button class="navbar-toggler" type="button" data-toggle="collapse"
+                    data-target="#navbarToggleExternalContent" aria-controls="navbarToggleExternalContent"
+                    aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+            </nav>
+        </div>
+
+        <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img class="d-block w-100" src="assets/images/header/header_carousel-01.png" alt="Первый слайд">
+                    <div class="caption">
+                        <h3>Bohauss</h3>
+                        <p>Luxury big sofa 2-seat</p>
+                        <h4>Rp 17.000.000</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/header/header_carousel-02.png" alt="Второй слайд">
+                    <div class="caption">
+                        <h3>Bohauss</h3>
+                        <p>Luxury big sofa 2-seat</p>
+                        <h4>Rp 17.000.000</h4>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img class="d-block w-100" src="assets/images/header/header_carousel-03.png" alt="Третий слайд">
+                    <div class="caption">
+                        <h3>Bohauss</h3>
+                        <p>Luxury big sofa 2-seat</p>
+                        <h4>Rp 17.000.000</h4>
+                    </div>
+                </div>
+            </div>
+            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                <span class="sr-only">Previous</span>
+            </a>
+            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                <span class="sr-only">Next</span>
+            </a>
+        </div>
+
+        <div class="header__jumbotron">
+            <div class="jumbotron">
+                <h1 class="display-4">High-Quality Furniture Just For You</h1>
+                <p class="lead">Our furniture is made from selected and best quality materials that are suitable for
+                    your
+                    dream home</p>
+                <div class="header__button">
+                    <a class="btn btn-lg" href="#products" role="button">Shop Now</a>
+                </div>
+            </div>
+        </div>
+
+        <div id="header__jumbotron-small">
+            <div class="jumbotron-small">
+                <h1 class="display-4">High-Quality Furniture Just For You</h1>
+                <p class="lead">Our furniture is made from selected and best quality materials that are suitable for
+                    your
+                    dream home</p>
+                <div class="header__button">
+                    <a class="btn btn-lg" href="#" role="button">Shop Now</a>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <main class="container">
+        <div class="header__benefits">
+            <div class="item">
+                <div><img src="assets/images/header/trophy.png" class="item__img" alt="trophy" /></div>
+                <div class="item__column">
+                    <div class="item__header">High Quality</div>
+                    <div class="item__text">Crafted from top materials</div>
+                </div>
+            </div>
+            <div class="item">
+                <div><img src="assets/images/header/protection.png" class="item__img" alt="trophy" /></div>
+                <div class="item__column">
+                    <div class="item__header">Warrany Protection</div>
+                    <div class="item__text">Over 2 years</div>
+                </div>
+            </div>
+            <div class="item">
+                <div><img src="assets/images/header/shipping.png" class="item__img" alt="trophy" /></div>
+                <div class="item__column">
+                    <div class="item__header">Free Shipping</div>
+                    <div class="item__text">Order over 150 $</div>
+                </div>
+            </div>
+            <div class="item">
+                <div><img src="assets/images/header/customer-support.png" class="item__img" alt="trophy" /></div>
+                <div class="item__column">
+                    <div class="item__header">24 / 7 Support</div>
+                    <div class="item__text">Dedicated support</div>
+                </div>
+            </div>
+        </div>
+
+        <article class="gallery__article" id="products">
+            <div class="gallery__title">
+                <p class="heading_products">Our Products</p>
+            </div>
+            <div class="gallery__list" id="gallery">
+            </div>
+            <div class="bdt_show_more"><a class="link_show_more" href="our_products.html">Show More</a></div>
+        </article>
+
+        <section class="inspiration" id="inspirations">
+            <div class="inspiration__container">
+                <div class="inspiration__text">
+                    <h2 class="inspiration__title"> 50+ Beautiful rooms <br> inspiration </h2>
+                    <p class="inspiration__subtitle"> Our designer already made a lot of beautiful <br>
+                        prototipe of rooms that inspire you</p>
+                    <button class="inspiration__button"> Explore More</button>
+                </div>
+                <div class="inspiration__photo">
+                    <div class="inspiration__room inspiration__room-photo">
+                        <a href="#img3" class="room">
+                            <div class="inspiration__gall-photo">
+                                <img src="./assets/images/inspiration/Rectangle24.png" alt="children’s" class="room">
+                            </div>
+                        </a>
+                        <a href="#" class="inspiration__photo__room" id="img3">
+                            <span style="background-image: url(./assets/images/inspiration/Rectangle24.png)"></span>
+                        </a>
+                        <div class="inspiration__room inspiration__room-text">
+                            <div class="inspiration__room__text">
+                                <p class="inspiration__room__desc"> 01 &#8212; Bed Room </p>
+                                <p class="inspiration__room__quote"> Inner Peace </p>
+                                <button class="inspiration__room__btn"> &#8594; </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="inspiration__gall inspiration__gall-rooms">
+                    <div class="inspiration__btn">
+                        <button type="button" onclick="changeImgPrev()" id="btnPrev">&lsaquo;</button>
+                    </div>
+                    <a href="#img1">
+                        <div class="inspiration__gall-photo">
+                            <img src="./assets/images/inspiration/Rectangle25.png" alt="room" class="room" id="room">
+                        </div>
+                    </a>
+                    <a href="#" class="inspiration__photo__room" id="img1">
+                        <span style="background-image: url(./assets/images/inspiration/Rectangle25.png);"></span>
+                    </a>
+                    <div class="inspiration__btn">
+                        <button type="button" onclick="changeImgNext()" id="btnNext">&rsaquo;</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+        <section class="tips">
+            <div class="tips__header">Tips & Tricks</div>
+            <div class="tips__carousel">
+                <div id="splide" class="splide">
+                    <div class="splide__track">
+                        <ul class="splide__list">
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="assets/images/tips/living_room.png" alt="image1">
+                                    <div class="slide__text">
+                                        <p class="slide__header">How to create a living room to love</p>
+                                        <p class="slide__date">20 jan 2020</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="assets/images/tips/working_space.png" alt="image2">
+                                    <div class="slide__text">
+                                        <p class="slide__header">Solution for clean look working space</p>
+                                        <p class="slide__date">10 jan 2020</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="assets/images/tips/kitchen.png" alt="image3">
+                                    <div class="slide__text">
+                                        <p class="slide__header">Make your cooking activity more fun with good setup</p>
+                                        <p class="slide__date">20 jan 2020</p>
+                                    </div>
+                                </div>
+                            </li>
+                            <li class="splide__slide">
+                                <div class="splide__slide__container">
+                                    <img src="assets/images/tips/bedroom.png" alt="image1">
+                                    <div class="slide__text">
+                                        <p class="slide__header">Bedroom decorating ideas</p>
+                                        <p class="slide__date">20 jan 2020</p>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <section class="container_funiro">
+        <div id="total_container_funiro">
+            <!--Блоки с абсолютным позиционированием -->
+            <div id="img_container_funiro1"><img class="img_funiro" src="assets/images/funiro/Rectangle36.png" alt="funirofurniture1"> </div>
+            <div id="img_container_funiro2"> <img class="img_funiro" src="assets/images/funiro/Rectangle37.png" alt="funirofurniture2"></div>
+            <div id="img_container_funiro3"> <img class="img_funiro" src="assets/images/funiro/Rectangle38.png" alt="funirofurniture3"></div>
+            <div id="img_container_funiro4"><img class="img_funiro" src="assets/images/funiro/Rectangle39.png" alt="funirofurniture4"></div>
+            <div id="text_container_funiro1"> Share you set up with </div>
+            <div id="text_container_funiro2"> #FuniroFurniture </div>
+            <div id="img_container_funiro5"><img class="img_funiro" src="assets/images/funiro/Rectangle40.png" alt="funirofurniture5"></div>
+            <div id="img_container_funiro6"><img class="img_funiro" src="assets/images/funiro/Rectangle43.png" alt="funirofurniture6"></div>
+            <div id="img_container_funiro7"><img class="img_funiro" src="assets/images/funiro/Rectangle41.png" alt="funirofurniture7"></div>
+            <div id="img_container_funiro8"> <img class="img_funiro" src="assets/images/funiro/Rectangle45.png" alt="funirofurniture8"></div>
+            <div id="img_container_funiro9"> <img class="img_funiro" src="assets/images/funiro/Rectangle44.png" alt="funirofurniture9"></div>
+        </div>
+
+        <div class="bdt_page_up"><a class="link_page_up" href="#main">Page up</a></div>
+    </section>
+    <section class="footer">
+        <div class="footer__column footer__funiro">
+            <h3 class="footer__column_title">Funiro.</h3>
+            <p class="footer__column_item footer__column_description">Worldwide furniture store since 2020. We sell
+                over 1000+ branded products on our website</p>
+            <p class="footer__column_item"><img src="./assets/images/footer/map.png" alt="place"> Sawojajar Malang,
+                Indonesia</p>
+            <a class="footer__column_item" href="tel:+62894563455"><img src="./assets/images/footer/tell.png" alt="tel">
+                +6289 456 3455</a>
+            <a href="https://www.funiro.com" class="footer__column_item">www.funiro.com</a>
+        </div>
+        <div class="footer__column footer__menu">
+            <h3 class="footer__column_title">Menu</h3>
+            <a href="#" class="footer__column_item">Products</a>
+            <a href="#" class="footer__column_item">Rooms</a>
+            <a href="#" class="footer__column_item">Inspirations</a>
+            <a href="#" class="footer__column_item">About Us</a>
+            <a href="#" class="footer__column_item">Terms & Policy</a>
+        </div>
+        <div class="footer__column footer__account">
+            <h3 class="footer__column_title">Account</h3>
+            <a href="#" class="footer__column_item">My Account</a>
+            <a href="#" class="footer__column_item">Check Out</a>
+            <a href="#" class="footer__column_item">My Cart</a>
+            <a href="#" class="footer__column_item">My Catalog</a>
+        </div>
+        <div class="footer__column footer__connect">
+            <h3 class="footer__column_title">Stay Connected</h3>
+            <a href="https://www.facebook.com/" class="footer__column_item">Facebook</a>
+            <a href="https://www.instagram.com" class="footer__column_item">Instagram</a>
+            <a href="https://www.twitter.com" class="footer__column_item">Twitter</a>
+        </div>
+        <div class="footer__column footer__subscribe">
+            <h3 class="footer__column_title">Stay Updated</h3>
+            <form class="footer__column_subscribe">
+                <input class="footer__column_subscribe__input" placeholder="Enter your email" type="email" />
+                <button class="footer__column_subscribe__button"><img src="./assets/images/footer/subscribe-icon.png"
+                        alt="subscribe"></button>
+            </form>
+        </div>
+    </section>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
+    </script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
+    </script>
+    <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="scripts/index.js"></script>
+    <script src="scripts/header.js"></script>
+    <script src="scripts/our_products.js"></script>
+    <script src="scripts/inspiration.js"></script>
+    <script src="scripts/tips.js"></script>
+</body>
+
+</html>
