@@ -60,7 +60,6 @@ let arrayLikes = []; //массив лайков
 let cartArray = []; //массив товаров в корзине
 let cartPriceArray = []; //массив цен для корзины
 
-
 function shareViaWhatsapp(productName) {
     window.open(
         "https://web.whatsapp.com://send?text=" + productName,
