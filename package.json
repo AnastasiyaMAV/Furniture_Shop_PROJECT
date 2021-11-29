@@ -9,7 +9,7 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
-    "@splidejs/splide": "^3.6.5",
+    "@splidejs/splide": "^3.5.4",
     "sweetalert2": "^11.1.10"
   }
 }
