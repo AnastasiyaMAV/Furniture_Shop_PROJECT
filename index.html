@@ -5,10 +5,12 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    <link rel="stylesheet" href="styles/style.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" 
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="https://unpkg.com/swiper@7/swiper-bundle.min.css"/>
     <link rel="stylesheet" href="node_modules/@splidejs/splide/dist/css/splide.min.css">
+    <link rel="stylesheet" href="styles/style.css">
     <title>Furniture Shop</title>
 </head>
 
@@ -68,8 +70,10 @@
                     <div class="header-small__logo">Funiro.</div>
                     <div class="header__menu-item"><a href="#products">Products <img
                                 src="assets/images/header/arrowDown.png" alt="img" /></a></div>
-                    <div class="header__menu-item"><a href="#funiro">Rooms <img src="assets/images/header/arrowDown.png"
-                                alt="img" /></a>
+                    <div class="header__menu-item">
+                        <a href="#funiro">Rooms 
+                            <img src="assets/images/header/arrowDown.png"alt="img" />
+                        </a>
                     </div>
                     <div class="header__menu-item"><a href="#inspirations">Inspirations <img
                                 src="assets/images/header/arrowDown.png" alt="img" /></a></div>
@@ -238,7 +242,7 @@
                                 <img src="assets/images/inspiration/Rectangle24.png" alt="children’s" class="room">
                             </div>
                         </a>
-                        <a href="#" class="inspiration__photo__room" id="img3">
+                        <a href="#inspirations" class="inspiration__photo__room" id="img3">
                             <span style="background-image: url(assets/images/inspiration/Rectangle24.png)"></span>
                         </a>
                         <div class="inspiration__room inspiration__room-text">
@@ -250,24 +254,44 @@
                         </div>
                     </div>
                 </div>
-                <div class="inspiration__gall inspiration__gall-rooms">
-                    <div class="inspiration__btn">
-                        <button type="button" onclick="changeImgPrev()" id="btnPrev">&lsaquo;</button>
-                    </div>
-                    <a href="#img1">
-                        <div class="inspiration__gall-photo">
-                            <img src="assets/images/inspiration/Rectangle25.png" alt="room" class="room" id="room">
+                <div class="wrapper">
+                    <div class="image-slider swiper-container">
+                        <div class="image-slider__wrapper swiper-wrapper">
+                            <div class="image-slider__slide swiper-slide">
+                                <div class="image-slider__image">
+                                    <img src="assets/images/inspiration/Room_1.jpeg" alt="image">
+                                </div>
+                            </div>
+                            <div class="image-slider__slide swiper-slide">
+                                <div class="image-slider__image">
+                                    <img src="assets/images/inspiration/Room_2.jpeg" alt="image">
+                                </div>
+                            </div>
+                            <div class="image-slider__slide swiper-slide">
+                                <div class="image-slider__image">
+                                    <img src="assets/images/inspiration/Room_3.png" alt="image">
+                                </div>
+                            </div>
+                            <div class="image-slider__slide swiper-slide">
+                                <div class="image-slider__image">
+                                    <img src="assets/images/inspiration/Room_4.jpg" alt="image">
+                                </div>
+                            </div>
+                            <div class="image-slider__slide swiper-slide">
+                                <div class="image-slider__image">
+                                    <img src="assets/images/inspiration/Room_5.jpg" alt="image">
+                                </div>
+                            </div>
+                            <div class="image-slider__slide swiper-slide">
+                                <div class="image-slider__image">
+                                    <img src="assets/images/inspiration/Room_6.jpg" alt="image">
+                                </div>
+                            </div>
                         </div>
-                    </a>
-                    <a href="#" class="inspiration__photo__room" id="img1">
-                        <span style="background-image: url(assets/images/inspiration/Rectangle25.png);"></span>
-                    </a>
-                    <div class="inspiration__btn">
-                        <button type="button" onclick="changeImgNext()" id="btnNext">&rsaquo;</button>
                     </div>
                 </div>
             </div>
-        </section>
+            </section>
 
         <section class="tips">
             <div class="tips__header">Tips & Tricks</div>
@@ -378,19 +402,19 @@
             </form>
         </div>
     </section>
-
-    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
-        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous">
-    </script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
-        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous">
-    </script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
-        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous">
-    </script>
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" 
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" 
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" 
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" 
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" 
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" 
+        crossorigin="anonymous"></script>
     <script src="node_modules/@splidejs/splide/dist/js/splide.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script src="scripts/index.js"></script>
     <script src="scripts/our_products.js"></script>
 </body>

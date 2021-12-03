@@ -1,14 +1,15 @@
 .inspiration {
-    display: flex;
-    background-color: $color-inspiration-background;
-    flex-direction: row;
     margin-bottom: 50px;
+    font-family: 'Gilroy', Arial, Helvetica, sans-serif;
+    background-color: $color-inspiration-background;
+    // border: 2px solid red;
 }
 
-
 .inspiration__container {
-    margin: 2%;
+    // border: 2px solid blue;
+    margin-top: 5%;
     display: flex;
+    justify-content: space-around;
     flex-direction: row;
     width: 90vw;
 }
@@ -21,20 +22,36 @@
     margin: 3%;
 }
 
-
 .inspiration__title {
     color: $color-titles;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: bold;
+    line-height: 48px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .inspiration__subtitle {
     color: $color-text2;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
 }
 
 .inspiration__button {
     color: $color-white;
     background-color: $color-primary;
     border: $color-primary;
-    width: 55%;
+    height: 48px;
+    width: 176px;
+    font-size: 16px;
+    font-style: normal;
+    line-height: 24px;
+    text-align: center;
 }
 
 .inspiration__photo {
@@ -47,62 +64,49 @@
     position: relative;
     left: 39px;
     bottom: 142px;
-
 }
 
 .inspiration__room__text {
-    width: 153x;
-    height: 96px;
+    width: 217px;
+    height: 130px;
     position: absolute;
-    background-color: rgba(255, 255, 255, 0.562);
+    background-color: $color-area;
 }
 
 .inspiration__room__desc {
     color: $color-titles;
     padding: 5px;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-top: 20px;
+    margin-left: 30px;
 }
 
 .inspiration__room__quote {
     color: $color-text2;
     padding: 5px;
+    font-size: 28px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 34px;
+    letter-spacing: 0em;
+    text-align: left;
+    margin-left: 30px;
 }
 
 .inspiration__room__btn {
+    color: $color-white;
+    background-color: $color-primary;
+    border: $color-primary;
     position: relative;
-    left: 76px;
-    bottom: 34px;
-    background-color: coral;
-}
-
-.inspiration__gall {
-    display: flex;
-    margin-left: 3%;
-    /* border: 2px solid green; */
-}
-
-.inspiration__btn {
-    display: flex;
-    /* justify-content: center; */
-    align-items: center;
-}
-
-#btnNext,
-#btnPrev {
-    margin: 4%;
-    border-radius: 50%;
-    border: none;
-    background-color: transparent;
-    font-size: 2em;
-}
-
-#btnNext:hover {
-    color: #053308;
-    box-shadow: inset 0 0 0 1px #044118;
-}
-
-#btnPrev:hover {
-    color: #053308;
-    box-shadow: inset 0 0 0 1px #044118;
+    width: 48px;
+    height: 48px;
+    left: 133px;
+    bottom: 48px;
 }
 
 .inspiration__photo__room {
@@ -130,8 +134,24 @@
     background-size: contain;
 }
 
+.wrapper {
+    padding: 30px;
+    min-height: 100%;
+    min-width: 0;
+}
 
-//320-360
+.image-slider {
+    padding: 30px 0 70px 0;
+}
+
+.image-slider__image {
+    text-align: center;
+}
+
+.image-slider__image img {
+    max-width: 100%;
+}
+
 @media screen and (max-width: $breakpoint-phone) {
     .inspiration {
         display: grid;
@@ -163,21 +183,8 @@
         display: flex;
         justify-content: center;
     }
-
-    .room {
-        width: 55%;
-    }
-
-    .inspiration__gall {
-        margin-left: 0;
-    }
-
-    .inspiration__btn {
-        margin: 0 auto;
-    }
 }
 
-//361-499
 @media screen and (min-width: #{$breakpoint-phone+1px}) and (max-width: $breakpoint-tablet) {
     .inspiration {
         display: grid;
@@ -189,7 +196,6 @@
     .inspiration__container {
         margin: 2%;
         display: grid;
-        // justify-content: center;
         width: 90vw;
     }
 
@@ -203,29 +209,13 @@
         display: none;
     }
 
-
     .inspiration__gall-photo {
         display: flex;
         justify-content: center;
     }
-
-    .room {
-        padding: 3%;
-        width: 75%;
-    }
-
-    .inspiration__gall {
-        margin-left: 0;
-    }
-
-    .inspiration__btn {
-        margin: 0 auto;
-    }
 }
 
-//500-768
 @media screen and (min-width: #{$breakpoint-tablet+1px}) and (max-width: $breakpoint-small) {
-
     .inspiration__container {
         margin: 2%;
         display: grid;
@@ -245,23 +235,8 @@
         display: flex;
         justify-content: center;
     }
-
-    .room {
-        padding: 3%;
-        width: 65%;
-    }
-
-    .inspiration__gall {
-        margin-left: 0;
-    }
-
-    .inspiration__btn {
-        margin: 0 auto;
-    }
 }
 
-
-//769-1023
 @media screen and (min-width: #{$breakpoint-small+1px}) and (max-width: $breakpoint-medium) {
     .inspiration__container {
         margin: 2%;
@@ -279,14 +254,8 @@
         display: flex;
         justify-content: center;
     }
-
-    .room {
-        width: 90%;
-    }
 }
 
-
-//1024-1199
 @media screen and (min-width: #{$breakpoint-medium+1px}) and (max-width: $breakpoint-large) {
     .inspiration__container {
         margin: 2%;
@@ -305,10 +274,10 @@
         justify-content: center;
     }
 
-    .room {
-        width: 100%;
+    .inspiration__photo {
+        display: none;
     }
 }
 
-//1199
-@media screen and (min-width: #{$breakpoint-large+1px}) {}
+@media screen and (min-width: #{$breakpoint-large+1px}) {
+}
