@@ -1,10 +1,3 @@
-//----------Блок header----------
-document.addEventListener("DOMContentLoaded", function (event) {
-    for (element of document.querySelectorAll(".favoritesButton")) {
-        element.onclick = showFavList;
-    }
-})
-
 function showFavList() {
     Swal.fire({
         position: 'top-end',
@@ -21,24 +14,27 @@ function showFavList() {
     })
 }
 
-//----------Блок 50+ Beautiful rooms inspiration----------
-new Swiper('.image-slider', {
-    loop: true,
-
-    autoplay: {
-        delay: 3000,
-        disableOnInteraction: false
-    },
-
-    effect: 'fade',
-
-    fadeEffect: {
-        crossFade: true,
-    },
-});
-
-//----------Блок Tips & Tricks----------
 document.addEventListener( 'DOMContentLoaded', function () {
+//----------Блок header----------
+    for (element of document.querySelectorAll(".favoritesButton")) {
+        element.onclick = showFavList;
+    }    
+//----------Блок 50+ Beautiful rooms inspiration----------
+    new Swiper('.image-slider', {
+        loop: true,
+
+        autoplay: {
+            delay: 3000,
+            disableOnInteraction: false
+        },
+
+        effect: 'fade',
+
+        fadeEffect: {
+            crossFade: true,
+        },
+    });
+//----------Блок Tips & Tricks----------    
     new Splide('.splide', {
         type: 'loop',
         width: '90%',
