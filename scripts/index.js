@@ -12,11 +12,6 @@ let massProductHeaderJSON = [{ //Json для карусели в header
     "picture":"assets/images/header/room_design-4.jpg",
     "styleProduct":"Futuristic style",
     "productSortDiscription":"Big sofa 2-seat",
-    "price":"Rp 20.000.000"
-},{
-    "picture":"assets/images/header/room_design-4.jpg",
-    "styleProduct":"Futuristic style",
-    "productSortDiscription":"Big sofa 2-seat",
     "price":"Rp 15.000.000"
 },{
     "picture":"assets/images/header/room_design-5.jpg",
