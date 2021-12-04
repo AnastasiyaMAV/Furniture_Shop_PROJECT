@@ -5,62 +5,6 @@
     width: 100%;
     background-color: $color-inspiration-background;
 
-    .leftSideBtn {
-        display: flex;
-        justify-content: flex-end;
-
-
-        .groupButtons {
-            display: flex;
-            justify-content: space-between;
-            width: 50vw;
-            margin-right: 100px;
-
-            .radiobuttons {
-                display: flex;
-                align-items: center;
-
-                .switch {
-                    position: relative;
-                    width: 27px;
-                    height: 27px;
-                    border-radius: 100%;
-                    background-color: $color-inspiration-background;
-                    border: 1px solid #{$color-inspiration-background};
-                    margin-right: 20px;
-
-                    &::after {
-                        content: " ";
-                        position: absolute;
-                        top: 8px;
-                        right: 8px;
-                        bottom: 8px;
-                        left: 8px;
-                        border-radius: 100%;
-                        background-color: $color-text4;
-                    }
-
-                    &.switch-active {
-                        border-color: $color-primary;
-
-                        &::after {
-                            background-color: $color-primary;
-                        }
-                    }
-                }
-            }
-
-            .carouselButtons {
-                display: flex;
-                cursor: pointer;
-
-                .buttonPrev {
-                    margin-right: 10px;
-                }
-            }
-        }
-    }
-
     .header__menu {
         display: flex;
         justify-content: space-between;
@@ -76,7 +20,6 @@
         }
 
         .header__logo {
-
             & a {
                 font-weight: bold;
                 font-size: 24px;
@@ -341,6 +284,12 @@
     }
 }
 
+.carousel-control-next-icon {
+    height: 48px;
+    width: 48px;
+    background: url('../assets/images/header/btnNext.png');
+}
+
 
 .header__benefits {
     display: flex;
@@ -378,8 +327,7 @@
 
         .header__menu,
         .header-small,
-        .jumbotron,
-        .leftSideBtn {
+        .jumbotron {
             display: none;
         }
     }
@@ -418,8 +366,7 @@
 
         .header__menu,
         .header-small,
-        .jumbotron,
-        .leftSideBtn {
+        .jumbotron {
             display: none;
         }
     }
@@ -479,8 +426,7 @@
 
         .pos-f-t,
         .header__menu,
-        .jumbotron,
-        .leftSideBtn {
+        .jumbotron {
             display: none;
         }
     }
@@ -538,8 +484,7 @@
 
         .header__menu,
         .pos-f-t,
-        #header__jumbotron-small,
-        .leftSideBtn {
+        #header__jumbotron-small {
             display: none;
         }
 

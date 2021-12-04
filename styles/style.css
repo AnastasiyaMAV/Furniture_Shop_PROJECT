@@ -13,52 +13,6 @@
   width: 100%;
   background-color: #FCF8F3;
 }
-.header .leftSideBtn {
-  display: flex;
-  justify-content: flex-end;
-}
-.header .leftSideBtn .groupButtons {
-  display: flex;
-  justify-content: space-between;
-  width: 50vw;
-  margin-right: 100px;
-}
-.header .leftSideBtn .groupButtons .radiobuttons {
-  display: flex;
-  align-items: center;
-}
-.header .leftSideBtn .groupButtons .radiobuttons .switch {
-  position: relative;
-  width: 27px;
-  height: 27px;
-  border-radius: 100%;
-  background-color: #FCF8F3;
-  border: 1px solid #FCF8F3;
-  margin-right: 20px;
-}
-.header .leftSideBtn .groupButtons .radiobuttons .switch::after {
-  content: " ";
-  position: absolute;
-  top: 8px;
-  right: 8px;
-  bottom: 8px;
-  left: 8px;
-  border-radius: 100%;
-  background-color: #B0B0B0;
-}
-.header .leftSideBtn .groupButtons .radiobuttons .switch.switch-active {
-  border-color: #E89F71;
-}
-.header .leftSideBtn .groupButtons .radiobuttons .switch.switch-active::after {
-  background-color: #E89F71;
-}
-.header .leftSideBtn .groupButtons .carouselButtons {
-  display: flex;
-  cursor: pointer;
-}
-.header .leftSideBtn .groupButtons .carouselButtons .buttonPrev {
-  margin-right: 10px;
-}
 .header .header__menu {
   display: flex;
   justify-content: space-between;
@@ -287,6 +241,12 @@
   color: #616161;
 }
 
+.carousel-control-next-icon {
+  height: 48px;
+  width: 48px;
+  background: url("../assets/images/header/btnNext.png");
+}
+
 .header__benefits {
   display: flex;
   flex-direction: row;
@@ -315,8 +275,7 @@
 @media screen and (max-width: 360px) {
   .header .header__menu,
 .header .header-small,
-.header .jumbotron,
-.header .leftSideBtn {
+.header .jumbotron {
     display: none;
   }
 
@@ -346,8 +305,7 @@
 @media screen and (min-width: 361px) and (max-width: 499px) {
   .header .header__menu,
 .header .header-small,
-.header .jumbotron,
-.header .leftSideBtn {
+.header .jumbotron {
     display: none;
   }
 
@@ -396,8 +354,7 @@
   }
   .header .pos-f-t,
 .header .header__menu,
-.header .jumbotron,
-.header .leftSideBtn {
+.header .jumbotron {
     display: none;
   }
 
@@ -446,8 +403,7 @@
   }
   .header .header__menu,
 .header .pos-f-t,
-.header #header__jumbotron-small,
-.header .leftSideBtn {
+.header #header__jumbotron-small {
     display: none;
   }
   .header .jumbotron {
