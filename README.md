@@ -25,8 +25,8 @@
 #### Запуск:
 
 ```
-git clone https://github.com/AnastasiyaMAV/IF_PROJECT.git
-cd IF_PROJECT
+git clone https://github.com/AnastasiyaMAV/Furniture_Shop_PROJECT.git
+cd Furniture_Shop_PROJECT
 Live Server: Open with Live Server
 ```
 
